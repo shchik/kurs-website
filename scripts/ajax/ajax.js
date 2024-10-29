@@ -3,7 +3,7 @@ import { renderSpecialityPage } from "../speciality.js";
 
 export async function sendRequest() {
   await $.ajax({
-    url: "../../../public/phpScripts/ajax.php",
+    url: "../../phpScripts/ajax.php",
     dataType: "json",
     type: "GET",
     success: (response) => {
@@ -23,7 +23,7 @@ export async function sendRequest() {
 
 export async function deleteFromDb(id) {
   await $.ajax({
-    url: "../../../public/phpScripts/delete.php",
+    url: "../../phpScripts/delete.php",
     //dataType: "json",
     data: { id: id },
     type: "POST",
@@ -50,7 +50,7 @@ export function addAbiturient() {
   const pointsNumber = document.querySelector("#pointsNumber").value;
 
   $.ajax({
-    url: "../../../public/phpScripts/submit.php",
+    url: "../../phpScripts/submit.php",
     data: {
       firstname: firstname,
       lastname: lastname,
@@ -81,7 +81,7 @@ export function editAbiturient(abiturientId) {
   const pointsNumber = document.querySelector("#pointsNumber").value;
 
   $.ajax({
-    url: "../../../public/phpScripts/edit.php",
+    url: "../../phpScripts/edit.php",
     data: {
       id: id,
       firstname: firstname,
