@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/specialtiesStyles/header.css" />
+    <link rel="stylesheet" href="styles/specialtiesStyles/main.css" />
+    <link rel="stylesheet" href="styles/specialtiesStyles/general.css" />
+    <link rel="stylesheet" href="styles/sidebar/sidebar.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./scripts/jqueryLib/jquery-3.7.1.min.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <sidebar>
+      <div class="out">
+        <div class="side js-side">
+          <div class="side-inner">
+            <!-- header -->
+            <div class="side-header">
+              <a class="side-logo">
+                <img class="side-logo-image" src="images/BNTU-logo.gif" />
+                <div class="side-logo-text">BNTU</div>
+              </a>
+
+              <button class="side-toggle js-side-toggle">
+                <img src="images/icons/menu.png" />
+              </button>
+            </div>
+            <!-- header -->
+
+            <nav class="nav">
+              <ul class="nav-list">
+                <li class="nav-list-item">
+                  <a href="index.html" class="nav-list-link">
+                    <img
+                      src="images/icons/home.png"
+                      class="nav-list-link-icon"
+                    />
+                    <span class="nav-list-link-text">Главная</span>
+                  </a>
+                </li>
+                <li class="nav-list-item">
+                  <a href="addAbiturient.html" class="nav-list-link">
+                    <img
+                      src="images/icons/add.png"
+                      class="nav-list-link-icon"
+                    />
+                    <span class="nav-list-link-text">Добавить абитуриента</span>
+                  </a>
+                </li>
+                <li class="nav-list-item">
+                  <a href="index.html#contacts" class="nav-list-link">
+                    <img
+                      src="images/icons/contacts.png"
+                      class="nav-list-link-icon"
+                    />
+                    <span class="nav-list-link-text">Контакты</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="side-footer">
+              <a href="login.html" class="logout-link">
+                <img class="logout-link-icon" src="images/icons/logout.png" />
+                <span class="logout-link-text">logout</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </sidebar>
+    <main>
+      <div class="main-class js-main-class">
+        <div class="main-grid">
+          <div class="speciality-class">
+            <div>
+              <div>
+                <img
+                  src="images/background-image2.jpg"
+                  class="speciality-image"
+                />
+              </div>
+              <div>ИСИТ</div>
+              <div>
+                Информационные системы в обработке и представлении информации
+              </div>
+            </div>
+          </div>
+          <div class="abiturients-class">
+            <div class="one-abiturient">
+              <div class="abiturients-name">
+                1) Щербаков Никита Владимирович
+              </div>
+              <div class="abiturients-score">328</div>
+              <div class="grid-button-class">
+                <button
+                  class="delete-abiturient-button js-delete-abiturient-button"
+                  data-abiturient-id="${abiturient.id}"
+                >
+                  X
+                </button>
+              </div>
+            </div>
+            <div class="one-abiturient">
+              <div class="abiturients-name">
+                1) Щербаков Никита Владимирович
+              </div>
+              <div class="abiturients-score">328</div>
+              <div class="grid-button-class">
+                <button
+                  class="edit-abiturient-button js-edit-abiturient-button"
+                  data-abiturient-id="${abiturient.id}"
+                  title="edit"
+                >
+                  <img src="images/icons/edit.png" class="edit-image" />
+                </button>
+              </div>
+              <div class="grid-button-class">
+                <button
+                  class="delete-abiturient-button js-delete-abiturient-button"
+                  data-abiturient-id="${abiturient.id}"
+                  title="close"
+                >
+                  X
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="places-count-class">30</div>
+        </div>
+      </div>
+    </main>
+
+    <script src="scripts/sidebar/sidebar.js"></script>
+    <script type="module" src="scripts/speciality.js"></script>
+  </body>
+</html>

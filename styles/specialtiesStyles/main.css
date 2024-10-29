@@ -1,0 +1,123 @@
+.main-class {
+  margin: 20px 30px;
+  border: 1px black solid;
+  border-radius: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 40px 30px;
+  width: calc(100% - 400px);
+  transition: width 0.3s;
+  background-color: rgb(206, 243, 222);
+
+  &.wide {
+    width: calc(100% - 250px);
+  }
+}
+.table-title-flexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 45px;
+}
+.table-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(14, 61, 14);
+}
+.main-grid {
+  display: grid;
+  grid-template-columns: 3fr 12fr 2fr;
+  text-align: start;
+  align-items: center;
+  margin: 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+@media (max-width: 1000px) {
+  .main-grid {
+    width: 70%;
+  }
+  .table-title-flexbox {
+    flex: 500px 500px;
+  }
+}
+
+.speciality-class {
+  border-right: 1px solid black;
+  text-align: center;
+}
+.speciality-class div {
+  margin: 5px;
+}
+.speciality-image {
+  width: 100%;
+}
+.abiturients-class {
+  height: 100%;
+  border-right: 1px solid black;
+  overflow: auto;
+  height: 240px;
+}
+.abiturients-class::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f9f9fd;
+}
+
+.abiturients-class::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #0cca9a;
+}
+
+.abiturients-class::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #f9f9fd;
+}
+.one-abiturient {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 5px;
+}
+.abiturients-name {
+  flex: 1;
+}
+.abiturients-score {
+  width: 50px;
+}
+.places-count-class {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+}
+.grid-button-class {
+  width: 40px;
+}
+.delete-abiturient-button {
+  padding: 6px 10px;
+  color: red;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 2px;
+  transition: background-color 0.5s, color 0.4s;
+}
+.delete-abiturient-button:hover {
+  background-color: red;
+  color: black;
+}
+.edit-image {
+  width: 17px;
+}
+.edit-abiturient-button {
+  padding: 4px 6px;
+  background-color: rgb(250, 250, 250);
+  border: 1px solid gray;
+  border-radius: 2px;
+  transition: background-color 0.5s, color 0.4s;
+}
+.edit-abiturient-button:hover {
+  background-color: rgb(79, 151, 218);
+}

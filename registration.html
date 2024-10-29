@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/registration/registration.css" />
+    <script src="scripts/jqueryLib/jquery-3.7.1.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <form class="form">
+      <h1 class="form-title">Registration</h1>
+      <div class="form-group">
+        <input
+          type="email"
+          id="email"
+          class="form-input js-email-class"
+          placeholder=""
+          required
+        />
+        <label class="form__label">Email</label>
+      </div>
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-input"
+          id="login"
+          placeholder=""
+          required
+        />
+        <label class="form__label">Login</label>
+      </div>
+      <div class="form-group">
+        <input
+          type="password"
+          class="form-input"
+          id="password"
+          placeholder=""
+          required
+        />
+        <label class="form__label">Password</label>
+      </div>
+      <div class="form-group">
+        <input
+          type="password"
+          class="form-input js-confirm-password-input"
+          id="confirmPassword"
+          placeholder=""
+          required
+          minlength="3"
+        />
+        <label class="form__label">Confirm Password</label>
+      </div>
+      <div class="password-message">Password doesnt confirm!</div>
+      <button class="form__button js-form-button">Register</button>
+      <div class="register-link">
+        <p>
+          Already have an account?
+          <a href="login.html">Login</a>
+        </p>
+      </div>
+    </form>
+
+    <script src="scripts/registration.js" type="module"></script>
+  </body>
+</html>

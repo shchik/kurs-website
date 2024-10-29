@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/addAbiturient/form.css" />
+    <link rel="stylesheet" href="styles/sidebar/sidebar.css" />
+    <script src="./scripts/jqueryLib/jquery-3.7.1.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <sidebar>
+      <div class="out">
+        <div class="side js-side">
+          <div class="side-inner">
+            <!-- header -->
+            <div class="side-header">
+              <a class="side-logo">
+                <img class="side-logo-image" src="images/BNTU-logo.gif" />
+                <div class="side-logo-text">BNTU</div>
+              </a>
+
+              <button class="side-toggle js-side-toggle">
+                <img src="images/icons/menu.png" />
+              </button>
+            </div>
+            <!-- header -->
+
+            <nav class="nav">
+              <ul class="nav-list">
+                <li class="nav-list-item">
+                  <a href="index.html" class="nav-list-link">
+                    <img
+                      src="images/icons/home.png"
+                      class="nav-list-link-icon"
+                    />
+                    <span class="nav-list-link-text">Главная</span>
+                  </a>
+                </li>
+                <li class="nav-list-item">
+                  <a href="addAbiturient.html" class="nav-list-link">
+                    <img
+                      src="images/icons/add.png"
+                      class="nav-list-link-icon"
+                    />
+                    <span class="nav-list-link-text">Добавить абитуриента</span>
+                  </a>
+                </li>
+                <li class="nav-list-item">
+                  <a href="index.html#contacts" class="nav-list-link">
+                    <img
+                      src="images/icons/contacts.png"
+                      class="nav-list-link-icon"
+                    />
+                    <span class="nav-list-link-text">Контакты</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="side-footer">
+              <a href="login.html" class="logout-link">
+                <img class="logout-link-icon" src="images/icons/logout.png" />
+                <span class="logout-link-text">logout</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </sidebar>
+
+    <div class="body-container">
+      <div class="container">
+        <h1>Добавить пользователя</h1>
+        <form>
+          <div class="input-box">
+            <input
+              type="text"
+              id="firstname"
+              name="firstname"
+              placeholder="firstname"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <input
+              type="text"
+              id="lastname"
+              name="lastname"
+              placeholder="lastname"
+              required
+            />
+          </div>
+
+          <div class="input-box">
+            <input
+              type="text"
+              id="patronymic"
+              name="patronymic"
+              placeholder="patronymic"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <input
+              type="text"
+              id="faculty"
+              name="faculty"
+              placeholder="faculty"
+              required
+            />
+          </div>
+
+          <div class="input-box">
+            <input
+              type="text"
+              id="speciality"
+              name="speciality"
+              placeholder="speciality"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <input
+              type="number"
+              id="pointsNumber"
+              name="pointsNumber"
+              placeholder="pointsNumber"
+              required
+            />
+          </div>
+          <div class="buttons-container">
+            <button type="submit" class="submit-button js-submit-button">
+              Добавить пользователя
+            </button>
+            <button class="submit-button js-edit-button">
+              Изменить пользователя
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="scripts/addAbiturient.js" type="module"></script>
+    <script src="scripts/sidebar/sidebar.js"></script>
+  </body>
+</html>
